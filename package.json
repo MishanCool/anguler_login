@@ -1,0 +1,32 @@
+{
+  "name": "anguler_login",
+  "version": "1.0.0",
+  "description": "mean stack authentication app , angular login",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start":"node app"
+  },
+
+  "dependencies": {
+    "express": "*",
+    "mongoose":"*",    
+    "bcryptjs":"*",
+    "cors":"*",
+    "jsonwebtoken":"*",
+    "body-parser":"*",
+    "passport":"*",
+    "passport-jwt":"*"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MishanCool/anguler_login.git"
+  },
+  "author": "Mishan Madhupa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MishanCool/anguler_login/issues"
+  },
+  "homepage": "https://github.com/MishanCool/anguler_login#readme"
+}
