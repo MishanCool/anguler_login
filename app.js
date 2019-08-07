@@ -2,7 +2,7 @@
   const path = require('path');
   const bodyParser = require('body-parser');
   const cors = require('cors');
-  const passport = require('passport');
+  const passport = require('passport'); // create modules
   const mongoose = require('mongoose');
 
   const app = express();
