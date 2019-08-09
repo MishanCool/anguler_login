@@ -8,19 +8,19 @@ router.get('/register', (req, res, next) => {
 
 
 //Authentication
-// router.get('/authenticate', (req, res, next) => {
-//     res.send('AUTHENTICATE');
-// });
+router.get('/authenticate', (req, res, next) => {
+    res.send('AUTHENTICATE');
+});
 
 //Profile
-// router.get('/profile', (req, res, next) => {
-//     res.send('PROFILE');
-// });
+router.get('/profile', (req, res, next) => {
+    res.send('PROFILE');
+});
 
 //validate
-// router.get('/validate', (req, res, next) => {
-//     res.send('VALIDATE');
-// });
+router.get('/validate', (req, res, next) => {
+    res.send('VALIDATE');
+});
 
 
  module.exports = router;
