@@ -21,7 +21,7 @@ app.use(cors());
 
 
 //set Static Folder
-//app.use(express.static(path.join(_dirname, 'public'))); //public->folder name
+app.use(express.static(path.join('public'))); //public->folder name
 
 //Body parser Middleware
 app.use(bodyParser.json());
