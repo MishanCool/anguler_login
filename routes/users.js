@@ -8,7 +8,7 @@ router.get('/register', (req, res, next) => {
 
 
 //Authentication
-router.get('/authenticate', (req, res, next) => {
+router.post('/authenticate', (req, res, next) => {
     res.send('AUTHENTICATE');
 });
 
