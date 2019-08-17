@@ -39,6 +39,17 @@ router.post('/authenticate', (req, res, next) => {
         {
             return res.json({success: false, msg: 'User not found'});
         }
+
+        User.comparePassword(password, user.password, (err, isMatch) => {
+            if(err) throw err;
+
+            if(isMatch)
+            {
+                const token = jwt.sign(user, config.secret, {
+                    expiresIn: 604800 //one week
+                });
+            }
+        });   
     });
 });
 
