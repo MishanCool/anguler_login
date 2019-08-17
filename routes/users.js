@@ -48,6 +48,11 @@ router.post('/authenticate', (req, res, next) => {
                 const token = jwt.sign(user, config.secret, {
                     expiresIn: 604800 //one week
                 });
+
+                res.json({
+                    success: true,
+                    token: 'JWT'+token,
+                });
             }
         });   
     });
