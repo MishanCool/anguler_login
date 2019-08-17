@@ -53,6 +53,7 @@ router.post('/authenticate', (req, res, next) => {
                     success: true,
                     token: 'JWT'+token,
                 });
+                
             }
         });   
     });
