@@ -78,7 +78,8 @@ router.get('/profile', passport.authenticate('jwt', {session:false}), (req, res,
 
 //validate
 router.get('/validate', (req, res, next) => {
-    res.send('VALIDATE');
+    // res.send('VALIDATE');
+    res.json({user: req.user});
 });
 
 
