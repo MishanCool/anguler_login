@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');//bcrypt is password hashing algorithem
-const config = require('../models/database');
+const config = require('../config/database');
 
 //User Schema
 const UserSchema = mongoose.Schema({
@@ -43,12 +43,5 @@ module.exports.addUser = function(newUser, callback){
             newUser.password = hash;
             newUser.saave(callback);
         });
-    });
- }
-
- module.exports.comparePassword = function(candidatePassword, hash, callback){
-    bcrypt.compare(candidatePassword, hash, (err, isMatch) => {
-        if(err) throw err;
-        callback(null, isMatch);
     });
 }
