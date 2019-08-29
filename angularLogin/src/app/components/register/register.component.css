@@ -1,0 +1,177 @@
+*{
+	margin-top:  0px;
+	padding-top:  0px;
+
+}
+
+.body{ /*background img eka set karaganna vidiya*/
+
+	background-color: blue;
+	background-image: url('../../../assets/img/Home_Page.jpg');
+	background-size: cover;/*4to eka kadila thiyana velavata hadanna puluvan*/
+	height: 150vh;/*4to eka kadila thiyana velavata hadanna puluvan*/
+
+}
+
+.top-bar{
+
+	margin-top: -90px;
+	height: 90px;
+	width: 1504px;
+	background: gray;
+}
+
+.top-bar-links ul{
+
+	margin-top: -50px;
+	margin: 100px;
+	list-style: none;
+}
+
+.top-bar-links ul li{
+
+	padding:0 50px; /*link word athara space hadanava*/
+	display: inline-block;
+	margin-top: 35px;
+	border-right : 1px solid white; /*link word athara '|' lakuna danava*/
+
+}
+
+.top-bar-links ul li:last-child{ /*last child ge '|' anthimata thiyana border eka ain karannava*/
+	border: none;
+}
+
+.top-bar-links ul li a
+{
+
+	color: white;
+}
+
+.top-bar-links ul li a:hover
+{
+	color: #ffc107;
+}
+
+.registration_box{
+	margin-top: 200px;
+	width: 800px; /*loginsystem eka yatin thiyana kalu box eka haduva*/
+	height: 900px;
+	background: rgb(144, 111, 111);
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+
+	/*padding: 70px 30px; mekath hari. yatin thiyana visiyata 2k liwvath hari*/
+	padding-left: 30px;
+	padding-top: 70px;
+
+}
+
+.registration_box h1{
+	margin: 0;
+	padding: 0 0 20px ;
+	text-align: center;
+	font-size: 30px;
+}
+
+.registration_box .fname label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold; /*userName password kiyana 2ka bold karanava*/
+	color: black;
+}
+
+.registration_box .fname input{
+	width: 90%; /*user name ekai password ekai dena thanvala diga*/
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+.registration_box .lname label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold; /*userName password kiyana 2ka bold karanava*/
+	color: black;
+}
+
+.registration_box .lname input{
+	width: 90%; /*user name ekai password ekai dena thanvala diga*/
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+.registration_box .email label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold; /*userName password kiyana 2ka bold karanava*/
+	color: black;
+}
+
+.registration_box .email input{
+	width: 90%; /*user name ekai password ekai dena thanvala diga*/
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+.registration_box .mobile_number label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold; /*userName password kiyana 2ka bold karanava*/
+	color: black;
+}
+
+.registration_box .mobile_number input{
+	width: 90%; /*user name ekai password ekai dena thanvala diga*/
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+.registration_box .password label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold; /*userName password kiyana 2ka bold karanava*/
+	color: black;
+}
+
+.registration_box .password input{
+	width: 90%; /*user name ekai password ekai dena thanvala diga*/
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+.registration_box .conform_password label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold; /*userName password kiyana 2ka bold karanava*/
+	color: black;
+}
+
+.registration_box .conform_password input{
+	width: 90%; /*user name ekai password ekai dena thanvala diga*/
+	margin-bottom: 20px;
+	height: 30px;
+}
+
+.registration_box button[type="submit"] /*Log In button eka*/
+{
+	margin-top: 90px;
+	width: 200px;
+	border: none;
+	outline: none;
+	height: 60px;
+	background: #fb2525;
+	color: #fff;/*login button eke thiyana Log In eka sudupata karanava*/
+	font-size: 18px;
+	border-radius: 20px;/*kotuvata thibba Log In buton eke kon rawm karanava*/
+
+}
+
+.registration_box button[type="submit"]:hover
+{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
