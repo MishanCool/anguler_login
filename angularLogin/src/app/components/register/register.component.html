@@ -1,1 +1,62 @@
-<p>register works!</p>
+<div class="body">
+  <div class="registration_box">
+
+      <h1>REGISTER HERE</h1>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <form (ngSubmit)="onRegisterSubmit()">
+      <!--<form>-->
+        <div class="fname">
+          <label for="exampleInputFirst Name">First Name</label>
+          <input type="text" [(ngModel)]="name" name="name" class="form-control" id="exampleInputFirst Name" placeholder="First Name" >
+        </div>
+
+        <div class="lname">
+          <label for="exampleInputLast Name">Last Name</label>
+          <input type="text" class="form-control" id="exampleInputLast Name" placeholder="Last Name" name="lname">
+        </div>
+
+        <div class="email">
+          <label for="exampleInputEmail1">Email Address</label>
+          <input type="email" [(ngModel)]="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" >
+        </div>
+
+        <div class="mobile_number">
+          <label for="exampleInputMobile Number">Mobile Number</label>
+          <input type="text" class="form-control" id="exampleInputMobile Numbere" placeholder="Mobile Number" name="mobile_number">
+        </div>
+
+        <div class="password">
+          <label for="exampleInputPassword1">Password</label>
+          <br>
+          <input type="password" [(ngModel)]="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" >
+        </div>
+
+        <div class="conform_password">
+          <label for="exampleInputPassword1">Conform Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Conform Password" name="conform_password">
+        </div>
+
+        <br>
+        <br>
+       <br>
+
+       <div style="text-align: center;">
+            <button type="submit" class="btn btn-default">Submit</button>
+       </div>
+
+
+
+
+      </form>
+
+
+
+    </div><!--registration_box-->
+</div>
+
